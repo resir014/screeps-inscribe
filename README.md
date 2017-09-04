@@ -4,9 +4,13 @@
 
 ## Installation
 
+If you're using a module bundler like Webpack to build your Screeps code (e.g. in [`screeps-typescript-starter`](https://github.com/screepers/screeps-typescript-starter)), you can install `screeps-inscribe` via npm.
+
 ```bash
 $ npm install --save screeps-inscribe
 ```
+
+Or you can copy and paste the [vanilla JS implementation](https://gist.github.com/resir014/5b7dee4d6a5c8094f25b6e8d3e1cb35d) into your existing codebase.
 
 ## Usage
 
