@@ -4,13 +4,9 @@
 
 ## Installation
 
-At the moment, the only supported way to install this library is through a git submodule.
-
 ```bash
-$ git submodule add https://github.com/resir014/screeps-inscribe.git src/lib/Inscribe
+$ npm install --save screeps-inscribe
 ```
-
-Installation through npm will be available soon. Hang tight!
 
 ## Usage
 
