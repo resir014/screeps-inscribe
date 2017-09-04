@@ -1,8 +1,3 @@
-/*
- * Inscribe - a series of helper classes for improving the logging experience
- * on Screeps.
- */
-
 export interface ScreepsInscribe {
   /**
    * Decorates a string of text with color.
@@ -12,7 +7,7 @@ export interface ScreepsInscribe {
    * @returns {string} A string output of the color-formatted text.
    * @memberof IInscribe
    */
-  color(str: string, fontColor: string): string
+  color(str: string, fontColor: string): string;
   /**
    * Appends a link to log output
    *
@@ -21,7 +16,7 @@ export interface ScreepsInscribe {
    * @returns {string} A console output string with link.
    * @memberof IInscribe
    */
-  link(href: string, title: string): string
+  link(href: string, title: string): string;
   /**
    * Allows tooltip to be sent to the formatter
    *
@@ -30,7 +25,7 @@ export interface ScreepsInscribe {
    * @returns {string} The tooltipped text for the Screeps console.
    * @memberof IInscribe
    */
-  tooltip(str: string, tooltipText: string): string
+  tooltip(str: string, tooltipText: string): string;
   /**
    * Outputs a formatted version of `Game.time`
    *
@@ -39,7 +34,7 @@ export interface ScreepsInscribe {
    * @returns {string} A pretty-formatted `Game.time`.
    * @memberof Inscribe
    */
-  time(color?: string): string
+  time(color?: string): string;
 }
 
 /**
@@ -47,9 +42,7 @@ export interface ScreepsInscribe {
  *
  * @export
  */
-export function init(): ScreepsInscribe {
-  return { color, link, tooltip, time }
-}
+export declare function init(): ScreepsInscribe;
 
 /**
  * Decorates a string of text with color.
@@ -58,9 +51,7 @@ export function init(): ScreepsInscribe {
  * @param {string} fontColor Any HTML color name (`teal`) or hex code (`#33b5e5`).
  * @returns {string}
  */
-export function color(str: string, fontColor: string): string {
-  return `<span style="color:${fontColor}">${str}</span>`;
-}
+export declare function color(str: string, fontColor: string): string;
 
 /**
  * Appends a link to log output
@@ -70,9 +61,7 @@ export function color(str: string, fontColor: string): string {
  * @param {string} title The link title.
  * @returns {string}
  */
-export function link(href: string, title: string): string {
-  return `<a href="${href}" target="_blank">${title}</a>`;
-}
+export declare function link(href: string, title: string): string;
 
 /**
  * Allows tooltip to be sent to the formatter
@@ -82,9 +71,7 @@ export function link(href: string, title: string): string {
  * @param {string} tooltipText The tooltip text to give away
  * @returns {string}
  */
-export function tooltip(str: string, tooltipText: string): string {
-  return `<abbr title='${tooltipText}'>${str}</abbr>`;
-}
+export declare function tooltip(str: string, tooltipText: string): string;
 
 /**
  * Outputs a formatted version of `Game.time`
@@ -94,6 +81,4 @@ export function tooltip(str: string, tooltipText: string): string {
  *   (`#33b5e5`). Defaults to `gray` if empty.
  * @returns {string}
  */
-export function time(fontColor: string = 'gray'): string {
-  return color(Game.time.toString(), fontColor);
-}
+export declare function time(fontColor?: string): string;

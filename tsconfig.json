@@ -4,8 +4,7 @@
     "outDir": "dist",
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "lib": ["es2015"],
-    "declaration": true
+    "lib": ["es2015"]
   },
   "include": [
     "src/**/*.ts",
