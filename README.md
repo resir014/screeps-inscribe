@@ -10,11 +10,25 @@ $ npm install --save screeps-inscribe
 
 ## Usage
 
-To enable accessing Inscribe commands through the CLI, add the following to your `main.js`, outside of the game loop.
+To enable accessing Inscribe commands through the CLI, you should add `screeps-inscribe` to your global. To do this, add the following to your `main.js`, outside of the game loop.
 
 ```js
 global.Inscribe = Inscribe.init()
 ```
+
+If you use TypeScript, don't forget to include `ScreepsInscribe` in your declaration file as well.
+
+```ts
+declare namespace NodeJS {
+  interface Global {
+    // ...
+    Inscribe: ScreepsInscribe
+    // ...
+  }
+}
+```
+
+`screeps-inscribe` doesn't have any extra dependencies, and can be easily integrated to your existing logging utility.
 
 ```js
 import * as Inscribe from 'screeps-inscribe'
