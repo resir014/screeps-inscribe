@@ -1,4 +1,4 @@
-interface ScreepsInscribe {
+export interface ScreepsInscribe {
   /**
    * Decorates a string of text with color.
    *

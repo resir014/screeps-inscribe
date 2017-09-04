@@ -1,3 +1,5 @@
+import { ScreepsInscribe } from './types';
+
 /*
  * Inscribe - a series of helper classes for improving the logging experience
  * on Screeps.

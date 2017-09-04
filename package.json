@@ -1,0 +1,37 @@
+{
+  "name": "screeps-inscribe",
+  "version": "0.0.1",
+  "description": "A one-size-fits-all toolbox for detailed logging in TypeScript-based Screeps codes.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "commit": "git-cz",
+    "postinstall": "typings install",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tslint": "tslint --config tslint.json src/**/*.ts index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://resir014@github.com/resir014/screeps-inscribe.git"
+  },
+  "keywords": [
+    "screeps",
+    "logging",
+    "utility"
+  ],
+  "author": "Resi Respati <resir014@blvd.space>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resir014/screeps-inscribe/issues"
+  },
+  "homepage": "https://github.com/resir014/screeps-inscribe#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.26",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "typings": "^2.1.1"
+  }
+}
