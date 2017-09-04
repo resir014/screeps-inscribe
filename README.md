@@ -20,13 +20,13 @@ To enable accessing Inscribe commands through the CLI, you should add `screeps-i
 global.Inscribe = Inscribe.init()
 ```
 
-If you use TypeScript, don't forget to include `ScreepsInscribe` in your declaration file as well.
+If you use TypeScript, don't forget to include `Inscribe: any` in the `Global` interface of your declaration file as well.
 
 ```ts
 declare namespace NodeJS {
   interface Global {
     // ...
-    Inscribe: ScreepsInscribe
+    Inscribe: any
     // ...
   }
 }
