@@ -43,15 +43,6 @@ export interface ScreepsInscribe {
 }
 
 /**
- * Initialise Inscribe functions to the global.
- *
- * @export
- */
-export function init(): ScreepsInscribe {
-  return { color, link, tooltip, time }
-}
-
-/**
  * Decorates a string of text with color.
  *
  * @param {string} str The string to format.
@@ -96,4 +87,14 @@ export function tooltip(str: string, tooltipText: string): string {
  */
 export function time(fontColor: string = 'gray'): string {
   return color(Game.time.toString(), fontColor);
+}
+
+/**
+ * Initialise Inscribe functions to the global.
+ *
+ * @export
+ * @returns {ScreepsInscribe}
+ */
+export default function init(): ScreepsInscribe {
+  return { color, link, tooltip, time }
 }
