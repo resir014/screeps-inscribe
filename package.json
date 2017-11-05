@@ -33,8 +33,7 @@
     "tslint": "^5.7.0",
     "tslint-config-airbnb": "^5.3.0",
     "typed-screeps": "screepers/typed-screeps",
-    "typescript": "^2.5.2",
-    "typings": "^2.1.1"
+    "typescript": "^2.5.2"
   },
   "dependencies": {}
 }
