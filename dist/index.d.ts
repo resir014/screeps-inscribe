@@ -37,12 +37,6 @@ export interface ScreepsInscribe {
     time(color?: string): string;
 }
 /**
- * Initialise Inscribe functions to the global.
- *
- * @export
- */
-export declare function init(): ScreepsInscribe;
-/**
  * Decorates a string of text with color.
  *
  * @param {string} str The string to format.
@@ -77,3 +71,10 @@ export declare function tooltip(str: string, tooltipText: string): string;
  * @returns {string}
  */
 export declare function time(fontColor?: string): string;
+/**
+ * Initialise Inscribe functions to the global.
+ *
+ * @export
+ * @returns {ScreepsInscribe}
+ */
+export default function init(): ScreepsInscribe;

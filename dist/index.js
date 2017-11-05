@@ -5,15 +5,6 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Initialise Inscribe functions to the global.
- *
- * @export
- */
-function init() {
-    return { color: color, link: link, tooltip: tooltip, time: time };
-}
-exports.init = init;
-/**
  * Decorates a string of text with color.
  *
  * @param {string} str The string to format.
@@ -61,3 +52,13 @@ function time(fontColor) {
     return color(Game.time.toString(), fontColor);
 }
 exports.time = time;
+/**
+ * Initialise Inscribe functions to the global.
+ *
+ * @export
+ * @returns {ScreepsInscribe}
+ */
+function init() {
+    return { color: color, link: link, tooltip: tooltip, time: time };
+}
+exports.default = init;
