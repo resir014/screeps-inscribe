@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "A one-size-fits-all toolbox for detailed logging in TypeScript-based Screeps codes.",
   "main": "./dist/index.js",
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "commit": "git-cz",
