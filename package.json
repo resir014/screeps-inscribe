@@ -9,7 +9,7 @@
     "commit": "git-cz",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tslint": "tslint --config tslint.json src/**/*.ts index.d.ts"
+    "lint": "tslint --config tslint.json src/**/*.ts"
   },
   "repository": {
     "type": "git",

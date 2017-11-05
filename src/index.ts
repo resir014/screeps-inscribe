@@ -50,7 +50,7 @@ export interface ScreepsInscribe {
  * @returns {string}
  */
 export function color(str: string, fontColor: string): string {
-  return `<span style="color:${fontColor}">${str}</span>`;
+  return `<span style="color:${fontColor}">${str}</span>`
 }
 
 /**
@@ -62,7 +62,7 @@ export function color(str: string, fontColor: string): string {
  * @returns {string}
  */
 export function link(href: string, title: string): string {
-  return `<a href="${href}" target="_blank">${title}</a>`;
+  return `<a href="${href}" target="_blank">${title}</a>`
 }
 
 /**
@@ -74,7 +74,7 @@ export function link(href: string, title: string): string {
  * @returns {string}
  */
 export function tooltip(str: string, tooltipText: string): string {
-  return `<abbr title='${tooltipText}'>${str}</abbr>`;
+  return `<abbr title='${tooltipText}'>${str}</abbr>`
 }
 
 /**
@@ -86,7 +86,7 @@ export function tooltip(str: string, tooltipText: string): string {
  * @returns {string}
  */
 export function time(fontColor: string = 'gray'): string {
-  return color(Game.time.toString(), fontColor);
+  return color(Game.time.toString(), fontColor)
 }
 
 /**
