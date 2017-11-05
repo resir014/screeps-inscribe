@@ -7,11 +7,9 @@
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "commit": "git-cz",
-    "postinstall": "typings install && npm run build",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tslint": "tslint --config tslint.json src/**/*.ts index.d.ts",
-    "typings": "typings install"
+    "tslint": "tslint --config tslint.json src/**/*.ts index.d.ts"
   },
   "repository": {
     "type": "git",
@@ -29,10 +27,14 @@
   },
   "homepage": "https://github.com/resir014/screeps-inscribe#readme",
   "devDependencies": {
+    "@types/lodash": "^3.10.1",
     "@types/node": "^8.0.26",
     "rimraf": "^2.6.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "typed-screeps": "screepers/typed-screeps"
   }
 }
