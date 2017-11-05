@@ -1,6 +1,3 @@
-# Compiled package files
-dist/
-
 # Logs
 logs
 *.log

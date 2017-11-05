@@ -4,20 +4,22 @@
 
 ## Installation
 
-If you're using a module bundler like Webpack to build your Screeps code (e.g. in [`screeps-typescript-starter`](https://github.com/screepers/screeps-typescript-starter)), you can install `screeps-inscribe` via npm.
-
 ```bash
-$ npm install --save screeps-inscribe
-```
+# npm
+npm install --save screeps-inscribe
 
-Or you can copy and paste the [vanilla JS implementation](https://gist.github.com/resir014/5b7dee4d6a5c8094f25b6e8d3e1cb35d) into your existing codebase.
+# yarn
+yarn add screeps-inscribe
+```
 
 ## Usage
 
 To enable accessing Inscribe commands through the CLI, you should add `screeps-inscribe` to your global. To do this, add the following to your `main.js`, outside of the game loop.
 
-```js
-global.Inscribe = Inscribe.init()
+```ts
+import Inscribe from 'screeps-inscribe'
+
+global.Inscribe = Inscribe()
 ```
 
 If you use TypeScript, don't forget to include `Inscribe: any` in the `Global` interface of your declaration file as well.
@@ -39,6 +41,12 @@ import * as Inscribe from 'screeps-inscribe'
 
 console.log(`[${Inscribe.color('main', 'skyblue')}] Scripts bootstrapped`)
 ```
+
+## Contributing
+
+This codebase uses [husky](https://github.com/typicode/husky) to auto-compile changes on commit.
+
+To get started, simply clone this repository, and run `npm install`. After that, make any changes you want in `src/`. When you commit the changes, husky will first automatically run `npm run compile` and compile your changes.
 
 ## API Reference
 

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "commit": "git-cz",
-    "prepublishOnly": "npm run build",
+    "precommit": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint --config tslint.json src/**/*.ts"
   },
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/lodash": "^3.10.1",
     "@types/node": "^8.0.26",
+    "husky": "^0.14.3",
     "rimraf": "^2.6.1",
     "tslint": "^5.7.0",
     "tslint-config-airbnb": "^5.3.0",
