@@ -291,9 +291,9 @@ tsutils@^2.8.1:
   dependencies:
     tslib "^1.7.1"
 
-typed-screeps@screepers/typed-screeps:
-  version "1.0.0"
-  resolved "https://codeload.github.com/screepers/typed-screeps/tar.gz/93395352c475613a5ff46a7fe83ce109cece686f"
+typed-screeps@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/typed-screeps/-/typed-screeps-1.0.2.tgz#827f763ec3138048c9f151043b43f498bf83c79e"
 
 typescript@^2.5.2:
   version "2.5.2"
