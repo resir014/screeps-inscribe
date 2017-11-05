@@ -31,10 +31,10 @@
     "@types/node": "^8.0.26",
     "rimraf": "^2.6.1",
     "tslint": "^5.7.0",
+    "tslint-config-airbnb": "^5.3.0",
+    "typed-screeps": "screepers/typed-screeps",
     "typescript": "^2.5.2",
     "typings": "^2.1.1"
   },
-  "dependencies": {
-    "typed-screeps": "screepers/typed-screeps"
-  }
+  "dependencies": {}
 }
